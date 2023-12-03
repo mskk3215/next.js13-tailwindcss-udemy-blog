@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "id": "next.js13-udemy",
+      "title": "Next.js13をUdemyで学ぶ",
+      "content": "shincodeさんの教材でNext.js13を学んでいます。",
+      "createdAt": "2022/07/14"
+    },
+    {
+      "id": "json-server",
+      "title": "JSON server",
+      "content": "Get a full fake REST API with zero coding in less than 30 seconds (seriously)Created with <3 for front-end developers who need a quick back-end for prototyping and mocking.",
+      "createdAt": "2022/07/22"
+    }
+  ]
+}
