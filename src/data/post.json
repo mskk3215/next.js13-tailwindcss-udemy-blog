@@ -11,6 +11,12 @@
       "title": "JSON server",
       "content": "Get a full fake REST API with zero coding in less than 30 seconds (seriously)Created with <3 for front-end developers who need a quick back-end for prototyping and mocking.",
       "createdAt": "2022/07/22"
+    },
+    {
+      "id": "revalidation",
+      "title": "revalidation",
+      "content": "if you have multiple fetch requests in a statically rendered route, and each has a different revalidation frequency. The lowest time will be used for all requests. For dynamically rendered routes, each fetch request will be revalidated independently.Learn more about time-based revalidation.On-demand Revalidation.Data can be revalidated on-demand by path (revalidatePath) or by cache tag (revalidateTag) inside a Server Action or Route Handler.Next.js has a cache tagging system for invalidating fetch requests across routes.When using fetch, you have the option to tag cache entries with one or more tags.Then, you can call revalidateTag to revalidate all entries associated with that tag.For example, the following fetch request adds the cache tag collection:",
+      "createdAt": "2022/07/22"
     }
   ]
 }
