@@ -30,7 +30,11 @@ const ArticleCard = ({ article }: ArticleCardProps) => {
         <p className="text-sm pb-3 text-slate-900">
           Published on {article.createdAt}
         </p>
-        <p className="text-slate-900 pb-6">{article.content}</p>
+        <p className="text-slate-900 pb-6">
+          {article.content.length > 70
+            ? article.content.substring(0, 70) + "..."
+            : article.content}
+        </p>
         <Link
           href={`articles/${article.id}`}
           className="text-pink-800 hover:text-black"
