@@ -18,9 +18,13 @@ export default function RootLayout({
   return (
     <html lang="jp">
       <body className="container mx-auto bg-slate-700 text-slate-100">
-        <Header />
-        <Suspense fallback={<Loading />}> {children}</Suspense>
-        <Footer />
+        <div className="flex flex-col min-h-screen">
+          <Header />
+          <main className="flex-grow">
+            <Suspense fallback={<Loading />}> {children}</Suspense>
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
