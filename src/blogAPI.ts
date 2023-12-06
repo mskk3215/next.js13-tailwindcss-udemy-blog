@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { Article } from "./types";
 
+//json server用の記述
 export const getAllArticles = async (): Promise<Article[]> => {
   const res = await fetch(`http://localhost:3001/posts`, { cache: "no-store" }); //SSR
   if (!res.ok) {
