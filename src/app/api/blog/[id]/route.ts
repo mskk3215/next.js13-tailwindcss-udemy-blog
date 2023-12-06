@@ -25,3 +25,21 @@ export async function GET(
   }
   return NextResponse.json(data, { status: 200 });
 }
+
+export async function DELETE(
+  req: Request,
+  { params }: { params: { id: string } },
+  res: NextApiResponse
+) {
+  const id = params.id;
+
+  const { error: deleteError } = await supabase
+    .from("posts")
+    .delete()
+    .eq("id", id);
+
+  if (deleteError) {
+    return NextResponse.json(deleteError);
+  }
+  return NextResponse.json({ status: 200 });
+}
